@@ -22,7 +22,9 @@ public:
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    Persona p = Persona("John", 1);
-    p.stampaDati();
+    string nome;
+    cin >> nome;
+    Persona persona(nome, 1);
+    persona.stampaDati();
     return 0;
 }
