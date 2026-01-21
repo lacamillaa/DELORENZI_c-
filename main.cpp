@@ -27,7 +27,9 @@ int main() {
     // cin >> nome; // legge fino al primo spazio bianco
     getline(cin, nome); // legge tutto il buffer
 
-    Persona persona(nome, 1);
-    persona.stampaDati();
+    auto* persona = new Persona(nome, 1);
+    persona->stampaDati();
+    delete persona;
+    persona = nullptr;
     return 0;
 }
