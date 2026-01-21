@@ -18,6 +18,11 @@ public:
     void stampaDati() {
         cout << nome << " eta: " << eta << endl;
     }
+
+    // distruttore della classe
+    ~Persona() {
+        cout << "~Persona" << endl;
+    };
 };
 
 int main() {
@@ -30,6 +35,7 @@ int main() {
     auto* persona = new Persona(nome, 1);
     persona->stampaDati();
     delete persona;
+    // con delete libera la memoria e invoca il distruttore
     persona = nullptr;
     return 0;
 }
