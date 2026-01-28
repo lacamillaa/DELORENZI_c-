@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    /*string nome;
+    string nome;
     cout << "Inserisci il nome: ";
     // cin >> nome; // legge fino al primo spazio bianco
     getline(cin, nome); // legge tutto il buffer
@@ -17,7 +17,7 @@ int main() {
     persona->stampaDati();
     delete persona;
     // con delete libera la memoria e invoca il distruttore
-    persona = nullptr;*/
+    persona = nullptr;
 
     int arr[5]; // array STATICO, va nello stack
     int arr2[10] = {1, 2, 4, 8, 16, 32, 64, 128}; // array STATICO

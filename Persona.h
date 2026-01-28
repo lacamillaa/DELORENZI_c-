@@ -16,7 +16,7 @@ public:
     Persona();
     Persona(string nome, int eta);
 
-    void stampaDati() const;
+    void stampaDati();
 
     // distruttore della classe
     ~Persona();
